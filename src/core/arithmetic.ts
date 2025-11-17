@@ -5,11 +5,9 @@
 import type { ChronoDate, Duration } from '../types';
 import { dateFromNative } from './ChronoDate';
 import {
-  MILLISECONDS_IN_DAY,
   MILLISECONDS_IN_HOUR,
   MILLISECONDS_IN_MINUTE,
   MILLISECONDS_IN_SECOND,
-  MILLISECONDS_IN_WEEK,
 } from '../utils/constants';
 
 /**

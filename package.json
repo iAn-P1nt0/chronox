@@ -7,29 +7,29 @@
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
-      "require": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.js"
     },
     "./format": {
+      "types": "./dist/format.d.ts",
       "import": "./dist/format.mjs",
-      "require": "./dist/format.js",
-      "types": "./dist/format.d.ts"
+      "require": "./dist/format.js"
     },
     "./parse": {
+      "types": "./dist/parse.d.ts",
       "import": "./dist/parse.mjs",
-      "require": "./dist/parse.js",
-      "types": "./dist/parse.d.ts"
+      "require": "./dist/parse.js"
     },
     "./timezone": {
+      "types": "./dist/timezone.d.ts",
       "import": "./dist/timezone.mjs",
-      "require": "./dist/timezone.js",
-      "types": "./dist/timezone.d.ts"
+      "require": "./dist/timezone.js"
     },
     "./temporal": {
+      "types": "./dist/temporal.d.ts",
       "import": "./dist/temporal.mjs",
-      "require": "./dist/temporal.js",
-      "types": "./dist/temporal.d.ts"
+      "require": "./dist/temporal.js"
     }
   },
   "files": [

@@ -30,13 +30,8 @@ export function getTimezoneOffset(timezone: string): number {
   }
 
   // For IANA timezone names, use Intl API if available
-  if (typeof Intl !== 'undefined' && Intl.DateTimeFormat) {
+  if (typeof Intl !== 'undefined' && typeof Intl.DateTimeFormat !== 'undefined') {
     try {
-      const formatter = new Intl.DateTimeFormat('en-US', {
-        timeZone: timezone,
-        timeZoneName: 'short',
-      });
-
       // Get offset by comparing dates
       const date = new Date();
       const utcDate = new Date(date.toLocaleString('en-US', { timeZone: 'UTC' }));
@@ -78,14 +73,13 @@ export async function toTimezone(
 
     // Convert timestamp
     const timestamp = date.timestamp;
-    const targetDate = new Date(timestamp);
 
     // Apply timezone offset
     // Note: The date components should reflect the local time in that timezone
     const native = date.toNative();
 
     // Use Intl API for accurate conversion if available
-    if (typeof Intl !== 'undefined' && Intl.DateTimeFormat) {
+    if (typeof Intl !== 'undefined' && typeof Intl.DateTimeFormat !== 'undefined') {
       try {
         const formatter = new Intl.DateTimeFormat('en-US', {
           timeZone: timezone,
@@ -148,7 +142,7 @@ export function getTimezoneInfo(timezone: string): TimezoneInfo {
 
   // Try to get abbreviation
   let abbr = timezone;
-  if (typeof Intl !== 'undefined' && Intl.DateTimeFormat) {
+  if (typeof Intl !== 'undefined' && typeof Intl.DateTimeFormat !== 'undefined') {
     try {
       const formatter = new Intl.DateTimeFormat('en-US', {
         timeZone: timezone,
@@ -185,12 +179,12 @@ export const COMMON_TIMEZONES = Object.keys(TIMEZONE_OFFSETS);
  */
 export async function convertTimezone(
   date: ChronoDate,
-  fromTimezone: string,
-  toTimezone: string
+  _fromTimezone: string,
+  targetTimezone: string
 ): Promise<ChronoDate> {
   // First convert to UTC if not already
   const utcDate = date.timezone === 'UTC' ? date : await toTimezone(date, 'UTC');
 
   // Then convert to target timezone
-  return toTimezone(utcDate, toTimezone);
+  return toTimezone(utcDate, targetTimezone);
 }

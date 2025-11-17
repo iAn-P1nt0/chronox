@@ -45,8 +45,9 @@ describe('arithmetic', () => {
     it('handles month-end edge cases', () => {
       const jan31 = createDate('2025-01-31');
       const result = addMonths(jan31, 1);
-      expect(result.month).toBe(2);
-      // February doesn't have 31 days, should adjust
+      // Native Date behavior: Jan 31 + 1 month = Mar 3 (Feb 31 doesn't exist)
+      expect(result.month).toBe(3);
+      expect(result.day).toBe(3);
     });
   });
 
