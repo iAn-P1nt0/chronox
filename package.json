@@ -1,0 +1,95 @@
+{
+  "name": "chronox",
+  "version": "0.1.0",
+  "description": "Next-generation JavaScript date/time library - lightweight, fast, and tree-shakeable",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./format": {
+      "import": "./dist/format.mjs",
+      "require": "./dist/format.js",
+      "types": "./dist/format.d.ts"
+    },
+    "./parse": {
+      "import": "./dist/parse.mjs",
+      "require": "./dist/parse.js",
+      "types": "./dist/parse.d.ts"
+    },
+    "./timezone": {
+      "import": "./dist/timezone.mjs",
+      "require": "./dist/timezone.js",
+      "types": "./dist/timezone.d.ts"
+    },
+    "./temporal": {
+      "import": "./dist/temporal.mjs",
+      "require": "./dist/temporal.js",
+      "types": "./dist/temporal.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest --coverage",
+    "benchmark": "node benchmarks/run.js",
+    "lint": "eslint src --ext .ts",
+    "type-check": "tsc --noEmit",
+    "size": "size-limit",
+    "prepublishOnly": "npm run build && npm test && npm run size"
+  },
+  "keywords": [
+    "date",
+    "time",
+    "datetime",
+    "timezone",
+    "moment",
+    "date-fns",
+    "dayjs",
+    "temporal",
+    "immutable",
+    "typescript",
+    "lightweight",
+    "performance"
+  ],
+  "author": "Ian Pinto",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ipgthb/chronox.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ipgthb/chronox/issues"
+  },
+  "homepage": "https://github.com/ipgthb/chronox#readme",
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^11.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitest/coverage-v8": "^1.0.0",
+    "@vitest/ui": "^1.0.0",
+    "eslint": "^8.56.0",
+    "prettier": "^3.1.0",
+    "size-limit": "^11.0.0",
+    "tinybench": "^2.6.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.3.0",
+    "vitest": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

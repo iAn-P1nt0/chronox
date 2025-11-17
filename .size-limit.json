@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Core (index)",
+    "path": "dist/index.mjs",
+    "limit": "5 KB"
+  },
+  {
+    "name": "Format module",
+    "path": "dist/format.mjs",
+    "limit": "2 KB"
+  },
+  {
+    "name": "Parse module",
+    "path": "dist/parse.mjs",
+    "limit": "1.5 KB"
+  },
+  {
+    "name": "Timezone module",
+    "path": "dist/timezone.mjs",
+    "limit": "3 KB"
+  },
+  {
+    "name": "Temporal module",
+    "path": "dist/temporal.mjs",
+    "limit": "2 KB"
+  }
+]

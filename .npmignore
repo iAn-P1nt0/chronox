@@ -1,0 +1,31 @@
+# Source files
+src/
+tests/
+benchmarks/
+
+# Config files
+tsconfig.json
+tsup.config.ts
+vitest.config.ts
+.eslintrc.json
+.prettierrc.json
+.size-limit.json
+
+# Documentation
+CLAUDE.md
+AGENTS.md
+
+# CI/CD
+.github/
+
+# Development
+*.test.ts
+*.spec.ts
+coverage/
+.vscode/
+.idea/
+
+# Misc
+.DS_Store
+*.log
+.env
