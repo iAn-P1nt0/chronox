@@ -1,5 +1,5 @@
 {
-  "name": "chronox",
+  "name": "@ian-p1nt0/chronox",
   "version": "0.1.0",
   "description": "Next-generation JavaScript date/time library - lightweight, fast, and tree-shakeable",
   "main": "./dist/index.js",
@@ -35,8 +35,13 @@
   "files": [
     "dist",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "CHANGELOG.md"
   ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "sideEffects": false,
   "scripts": {
     "build": "tsup",
