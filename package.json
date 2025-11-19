@@ -1,6 +1,6 @@
 {
   "name": "@ian-p1nt0/chronox",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Next-generation JavaScript date/time library - lightweight, fast, and tree-shakeable",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
