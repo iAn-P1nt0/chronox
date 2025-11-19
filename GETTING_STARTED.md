@@ -196,6 +196,6 @@ console.log(`Generated ${dates.length} dates`);
 
 - Check the [README](README.md) for full API reference
 - Look at [examples](examples/) for code samples
-- Open an issue on [GitHub](https://github.com/ipgthb/chronox/issues)
+- Open an issue on [GitHub](https://github.com/ian-p1nt0/chronox/issues)
 
 Happy coding with ChronoX!

@@ -32,7 +32,7 @@ If you're contributing to ChronoX or want to build from source:
 ### Clone and Install
 
 ```bash
-git clone https://github.com/ipgthb/chronox.git
+git clone https://github.com/ian-p1nt0/chronox.git
 cd chronox
 npm install
 ```
@@ -214,5 +214,5 @@ If the build fails:
 
 ## Support
 
-- Issues: https://github.com/ipgthb/chronox/issues
-- Discussions: https://github.com/ipgthb/chronox/discussions
+- Issues: https://github.com/ian-p1nt0/chronox/issues
+- Discussions: https://github.com/ian-p1nt0/chronox/discussions

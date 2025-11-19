@@ -74,12 +74,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ipgthb/chronox.git"
+    "url": "https://github.com/ian-p1nt0/chronox.git"
   },
   "bugs": {
-    "url": "https://github.com/ipgthb/chronox/issues"
+    "url": "https://github.com/ian-p1nt0/chronox/issues"
   },
-  "homepage": "https://github.com/ipgthb/chronox#readme",
+  "homepage": "https://github.com/ian-p1nt0/chronox#readme",
   "devDependencies": {
     "@size-limit/preset-small-lib": "^11.0.0",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
