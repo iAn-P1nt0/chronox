@@ -277,10 +277,10 @@ export function addDurationBatch(dates: ChronoDate[], duration: Duration) {
 
 ```typescript
 // Good: Tree-shakeable
-import { format } from 'chronox/format';
+import { format } from 'chroncraft/format';
 
 // Avoid: Imports entire library
-import { format } from 'chronox';
+import { format } from 'chroncraft';
 ```
 
 ---
@@ -405,10 +405,10 @@ const formatted = dates.map(d => format(d, 'YYYY-MM-DD')); // Fast
 ⚠️ **WATCH OUT**: Timezone imports increase bundle
 ```typescript
 // Minimal bundle (< 3KB)
-import { format, createDate } from 'chronox';
+import { format, createDate } from 'chroncraft';
 
 // Larger bundle (~6KB) - includes timezone data
-import { toTimezone } from 'chronox/timezone';
+import { toTimezone } from 'chroncraft/timezone';
 ```
 
 ---

@@ -6,9 +6,9 @@
 [![Bundle Size](https://img.shields.io/bundlephobia/minzip/chroncraft)](https://bundlephobia.com/package/chroncraft)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-## Why ChronoX?
+## Why chroncraft?
 
-ChronoX is a modern date/time library designed to replace legacy solutions like Moment.js and overcome performance limitations in date-fns. It combines ultra-lightweight bundle size with cutting-edge optimizations.
+chroncraft is a modern date/time library designed to replace legacy solutions like Moment.js and overcome performance limitations in date-fns. It combines ultra-lightweight bundle size with cutting-edge optimizations.
 
 ### Key Features
 
@@ -261,7 +261,7 @@ const future = addDurationBatch(dates, { days: 5 });
 
 ## Tree-Shaking
 
-ChronoX is fully tree-shakeable. Import only what you need:
+chroncraft is fully tree-shakeable. Import only what you need:
 
 ```typescript
 // Minimal bundle (~3KB)
@@ -277,9 +277,9 @@ import { toTimezone } from 'chroncraft/timezone';
 
 ## Performance
 
-ChronoX is designed for performance:
+chroncraft is designed for performance:
 
-| Operation | ChronoX | date-fns | Improvement |
+| Operation | chroncraft | date-fns | Improvement |
 |-----------|---------|----------|-------------|
 | Format    | ~3.2M ops/sec | ~1.1M ops/sec | 2.9x faster |
 | Parse     | ~2.8M ops/sec | ~1.2M ops/sec | 2.3x faster |
@@ -292,7 +292,7 @@ ChronoX is designed for performance:
 
 | Library | Size (minified + gzipped) |
 |---------|---------------------------|
-| ChronoX (core) | 4.2 KB |
+| chroncraft (core) | 4.2 KB |
 | date-fns | 13.4 KB |
 | Moment.js | 71.5 KB |
 | Luxon | 23.2 KB |
@@ -307,7 +307,7 @@ ChronoX is designed for performance:
 
 ## TypeScript
 
-ChronoX is written in TypeScript and provides full type definitions out of the box.
+chroncraft is written in TypeScript and provides full type definitions out of the box.
 
 ```typescript
 import type { ChronoDate, Duration, Unit } from 'chroncraft';
@@ -327,7 +327,7 @@ moment().format('YYYY-MM-DD');
 moment().add(5, 'days');
 moment('2025-01-15').isBefore('2025-01-20');
 
-// ChronoX
+// chroncraft
 format(now(), 'YYYY-MM-DD');
 addDays(now(), 5);
 isBefore(createDate('2025-01-15'), createDate('2025-01-20'));
@@ -342,7 +342,7 @@ format(new Date(), 'yyyy-MM-dd');
 addDays(new Date(), 5);
 isBefore(new Date('2025-01-15'), new Date('2025-01-20'));
 
-// ChronoX
+// chroncraft
 import { format, addDays, isBefore, createDate } from 'chroncraft';
 format(createDate(), 'YYYY-MM-DD');
 addDays(createDate(), 5);

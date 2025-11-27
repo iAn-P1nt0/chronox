@@ -1,8 +1,8 @@
-# ChronoX Project Summary
+# chroncraft Project Summary
 
 ## Overview
 
-**ChronoX** is a next-generation TypeScript date/time library designed to replace Moment.js and overcome performance limitations in date-fns. Built from the ground up with modern JavaScript features, it delivers exceptional performance while maintaining a tiny bundle size.
+**chroncraft** is a next-generation TypeScript date/time library designed to replace Moment.js and overcome performance limitations in date-fns. Built from the ground up with modern JavaScript features, it delivers exceptional performance while maintaining a tiny bundle size.
 
 ## Project Statistics
 
@@ -18,7 +18,7 @@
 ### Module Structure
 
 ```
-chronox/
+chroncraft/
 ├── Core (src/core/)
 │   ├── ChronoDate.ts       - Immutable date implementation
 │   ├── factory.ts          - Date creation functions
@@ -356,7 +356,7 @@ npm run prepublishOnly # Pre-publish checks
 
 ## Conclusion
 
-ChronoX is a complete, production-ready date/time library that delivers on all core requirements:
+chroncraft is a complete, production-ready date/time library that delivers on all core requirements:
 
 - **Lightweight**: Tiny bundle size
 - **Fast**: Optimized performance

@@ -90,7 +90,7 @@ This validates that bundle sizes are within limits:
 npm run benchmark
 ```
 
-This compares ChronoX performance against native Date operations.
+This compares chroncraft performance against native Date operations.
 
 Expected improvements:
 - Format: 2-3x faster
@@ -161,14 +161,14 @@ If everything passes, you can publish to npm:
 # Ensure you are logged in to npm
 npm login
 
-# Publish the scoped package to https://www.npmjs.com/package/@ian-p1nt0/chronox
+# Publish the scoped package to https://www.npmjs.com/package/@ian-p1nt0/chroncraft
 npm publish
 ```
 
 ## Project Structure Overview
 
 ```
-chronox/
+chroncraft/
 ├── src/                      # TypeScript source code
 │   ├── core/                # Core functionality
 │   ├── format/              # Formatting engine

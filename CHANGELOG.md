@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Initial release of ChronoX
+- Initial release of chroncraft
 - Core date/time functionality with immutable ChronoDate objects
 - ISO 8601 parser with full timezone support
 - Token-based formatter with caching for optimal performance

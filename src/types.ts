@@ -1,5 +1,5 @@
 /**
- * Core type definitions for ChronoX
+ * Core type definitions for chroncraft
  */
 
 /**

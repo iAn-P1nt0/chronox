@@ -1,6 +1,6 @@
 /**
  * Temporal API compatibility layer
- * Provides Temporal-like API using ChronoX internally
+ * Provides Temporal-like API using chroncraft internally
  */
 
 import type { ChronoDate } from '../types';
@@ -278,7 +278,7 @@ export class Duration {
   }
 
   /**
-   * Convert to ChronoX Duration type
+   * Convert to chroncraft Duration type
    */
   toChronoDuration(): import('../types').Duration {
     return {

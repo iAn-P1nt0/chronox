@@ -84,7 +84,7 @@ chroncraft/
 ```bash
 # Clone repository
 git clone <repo-url>
-cd chronox
+cd chroncraft
 
 # Install dependencies
 pnpm install  # or npm install / yarn install
@@ -245,7 +245,7 @@ import { bench } from 'vitest';
 import { addDays as chronoAddDays } from '../src';
 import { addDays as dateFnsAddDays } from 'date-fns';
 
-bench('ChronoX addDays', () => {
+bench('chroncraft addDays', () => {
   chronoAddDays(testDate, 5);
 });
 
@@ -313,7 +313,7 @@ import dayjs from 'dayjs';
 describe('Feature Performance', () => {
   const testData = /* setup */;
   
-  bench('ChronoX', () => {
+  bench('chroncraft', () => {
     chronoFunction(testData);
   });
   
@@ -348,14 +348,14 @@ describe('Feature Performance', () => {
 ### Module Import Strategy
 ```typescript
 // ✅ CORRECT: Granular imports
-import { format } from 'chronox/format';
-import { toTimezone } from 'chronox/timezone';
+import { format } from 'chroncraft/format';
+import { toTimezone } from 'chroncraft/timezone';
 
 // ⚠️ OK but larger bundle
-import { format, toTimezone } from 'chronox';
+import { format, toTimezone } from 'chroncraft';
 
 // ❌ WRONG: Imports everything
-import * as chronox from 'chronox';
+import * as chroncraft from 'chroncraft';
 ```
 
 ---
@@ -498,7 +498,7 @@ export function newFeature(input: Input): Output {
 **5. Benchmark**
 ```typescript
 // benchmarks/new-feature.bench.ts
-bench('ChronoX newFeature', () => { /* ... */ });
+bench('chroncraft newFeature', () => { /* ... */ });
 bench('date-fns equivalent', () => { /* ... */ });
 ```
 
@@ -751,7 +751,7 @@ function format(date: ChronoDate, format: string): string { }
 // Run 'pnpm size' after every change
 
 // ✅ Split large features into separate entries
-// chronox/timezone, chronox/format, etc.
+// chroncraft/timezone, chroncraft/format, etc.
 ```
 
 ---
@@ -822,7 +822,7 @@ Return summary with key findings and recommendations."
 
 ## 🎯 Agent Success Criteria
 
-An AI agent is successful on ChronoX when:
+An AI agent is successful on chroncraft when:
 
 1. ✅ All generated code passes TypeScript strict checks
 2. ✅ Bundle size remains under budget

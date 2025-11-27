@@ -140,7 +140,7 @@ console.log(format(date, 'YYYY-MM-DD'));
 
 ### TypeScript
 
-ChronoX includes TypeScript definitions. No additional setup required:
+chroncraft includes TypeScript definitions. No additional setup required:
 
 ```typescript
 import { createDate, format, ChronoDate } from 'chroncraft';
