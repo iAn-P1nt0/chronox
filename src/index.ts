@@ -49,6 +49,16 @@ export { format, FORMAT_PRESETS } from './format/index';
 // Parsing
 export { parseISO, parse } from './parse/index';
 
+// Relative time formatting
+export {
+  formatDistanceToNow,
+  formatDistance,
+  formatRelativeTime,
+  formatShortRelativeTime,
+  type FormatDistanceOptions,
+  type RelativeTimeOptions,
+} from './relative/index';
+
 // Types
 export type {
   ChronoDate,
